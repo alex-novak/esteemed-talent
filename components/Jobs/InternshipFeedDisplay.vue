@@ -43,7 +43,7 @@ export default {
   scrollToTop: true,
   computed: {
     jobsListShow() {
-      return this.$store.state.jobsListShow
+      return this.$store.state.internshipListShow
     }
   },
   mounted() {

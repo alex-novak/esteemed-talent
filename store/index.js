@@ -9,6 +9,8 @@ Vue.use(Vuex)
 export const state = () => ({
   jobsList: [],
   jobsListShow: [],
+  internshipList: [],
+  internshipListShow: [],
   loading: true,
   error: ''
 })
@@ -24,6 +26,12 @@ export const mutations = {
   },
   SET_JOBS_SHOW (state, { jobs }) {
     state.jobsListShow = jobs
+  },
+  SET_INTERNSHIP (state, { jobs }) {
+    state.internshipsList = jobs
+  },
+  SET_INTERNSHIP_SHOW (state, { jobs }) {
+    state.internshipsListShow = jobs
   },
   SET_ERROR (state, { err }) {
     state.error = err.message
@@ -53,6 +61,8 @@ export const actions = {
     const { data } = await Api.jobs.get()
     commit('SET_JOBS', { jobs: data })
     commit('SET_JOBS_SHOW', { jobs: state.jobsList })
+    commit('SET_INTERNSHIP', { jobs: state.jobsList.filter(job => job.employmentType == 'Internship') })
+    commit('SET_INTERNSHIP_SHOW', { jobs: state.internshipList })
   },
   async getJob ({ dispatch, commit, state }, { id }) {
     if (!state.jobsList.length) {
