@@ -21,6 +21,9 @@ import InternshipFeedDisplay from '~/components/Jobs/InternshipFeedDisplay'
 
 export default {
   name: 'Internships',
+  head: {
+    title: 'Browse Open Internships',
+  },
   components: { InternshipFeedDisplay },
   computed: {
     loading() {
