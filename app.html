@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <html {{ HTML_ATTRS }}>
+    <head {{ HEAD_ATTRS }}>
+      {{ HEAD }}
+      <script type="text/javascript">
+        window.hfAccountId = "44b3f502-1e36-4e02-9873-46c313eae241";
+        window.hfDomain = "https://api.herefish.com";
+        (function() {
+            var hf = document.createElement('script'); hf.type = 'text/javascript'; hf.async = true;
+            hf.src = window.hfDomain + '/scripts/hf.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hf, s);
+        })();
+      </script>
+    </head>
+
+    <body {{ BODY_ATTRS }}>
+      {{ APP }}
+    </body>
+</html>
