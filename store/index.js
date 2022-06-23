@@ -1,10 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import * as Api from '~/api'
+import VueGtm from '@gtm-support/vue2-gtm'
 
 import { timeout, getListOptions } from '~/helpers'
 
 Vue.use(Vuex)
+Vue.use(VueGtm, {
+  id: 'GTM-WHGM9PZ'
+})
 
 export const state = () => ({
   jobsList: [],

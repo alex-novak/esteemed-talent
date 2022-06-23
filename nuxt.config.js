@@ -84,27 +84,9 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'bootstrap-vue/nuxt',
-    '@nuxtjs/gtm'
+    'bootstrap-vue/nuxt'
   ],
 
-  gtm: {
-    id: 'GTM-WHGM9PZ',
-    layer: 'dataLayer',
-    scriptId: 'gtm-script',
-    scriptDefer: false,
-    scriptURL: 'https://www.googletagmanager.com/gtm.js',
-    crossOrigin: false,
-    noscript: true,
-    noscriptId: 'gtm-noscript',
-    noscriptURL: 'https://www.googletagmanager.com/ns.html'
-  },
-
-  publicRuntimeConfig: {
-    gtm: {
-      id: 'GTM-WHGM9PZ'
-    }
-  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
