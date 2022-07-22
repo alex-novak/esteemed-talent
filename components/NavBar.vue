@@ -27,7 +27,7 @@
         <li>
           <a
             class="ml-lg-5 mx-auto btn btn-primary"
-            href="https://esteemed.slack.com/join/shared_invite/zt-aejwraa8-mFs6ZUEs6voPD5RCV3vwvg#/shared-invite/email"
+            href="https://esteemed.io/join-colleagues/"
             >Join Colleagues
           </a>
         </li>
